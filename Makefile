@@ -9,7 +9,7 @@ include $(THEOS)/makefiles/common.mk
 TWEAK_NAME = autoflex
 FLEX_FILES := $(shell find src -type f -name "*.m" -o -name "*.mm" -o -name "*.c")
 
-autoflex_FILES = Tweak.x $(FLEX_FILES)
+autoflex_FILES = Tweak.x availability.m $(FLEX_FILES)
 autoflex_CFLAGS = -Isrc -fobjc-arc -Wno-deprecated-declarations -Wno-strict-prototypes -Wno-unsupported-availability-guard -Wno-unknown-warning-option
 
 autoflex_FRAMEWORKS = UIKit CoreGraphics QuartzCore ImageIO WebKit Security SceneKit AVFoundation UserNotifications
