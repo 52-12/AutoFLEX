@@ -1,9 +1,9 @@
 FINALPACKAGE=1
 
-# INSTALL_TARGET_PROCESSES = SpringBoard
 ARCHS = arm64
-# THEOS_PACKAGE_SCHEME=roothide
-TARGET = iphone:clang:latest:15.0
+TARGET = iphone:clang:latest:16.0
+export THEOS_PACKAGE_SCHEME = rootless
+
 include $(THEOS)/makefiles/common.mk
 
 TARGET_CC = xcrun -sdk iphoneos clang
