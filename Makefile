@@ -6,10 +6,6 @@ export THEOS_PACKAGE_SCHEME = rootless
 
 include $(THEOS)/makefiles/common.mk
 
-TARGET_CC = xcrun -sdk iphoneos clang
-TARGET_CXX = xcrun -sdk iphoneos clang++
-TARGET_LD = xcrun -sdk iphoneos clang++
-
 TWEAK_NAME = autoflex
 FLEX_FILES := $(shell find src -type f -name "*.m" -o -name "*.mm" -o -name "*.c")
 
